@@ -77,3 +77,10 @@
 - Give name instead of origin (partner1) for the 'master' branch
 - `$ git remote add partner1 master git@github.com:partner1/git-workflow.git`
 - `$ git push origin master` (up to Partner 2 repo)
+
+##### Git Ignore
+
+If you already have a file checked in, and you want to ignore it, Git will not ignore the file if you add a rule later. In those cases, you must untrack the file first, by running the following command in your terminal:
+
+- `$ touch .gitignore`
+- `$ git rm --cached FILENAME`
