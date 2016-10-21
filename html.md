@@ -6,8 +6,6 @@
 
   - Tags `<></>` (opening/closing)
   - `<input> <br>` doesn't need closing Tags
-  - Common Tags
-    - `<html> <head> <body> <li> etc`
   - Tree Structure: single node with children underneath it
   - Validating HTML
     - [html5.validator.nu](https://html5.validator.nu/)
@@ -20,7 +18,16 @@
     - Good Spacing
     - Comments
     - Make the 'Scrap-able'
-  - Examples `<header> <main> <nav> <main> <section> <summary> etc`
+
+
+  - Commonly Used Tags
+  - `<head>` `<link>` `<meta>` (`<style>` internal styles) `<title>` `<body>` `<article>` `<aside>` `<footer>` `header` `<h1>` `<h2>` `<h3>` `<h4>` `<h5>,<h6>` `<nav>` (`<section>` has a heading) `<div>` (`<figure>` `<figcaption>` how you semanticly use the `<img>` tag, when its content) `<hr>` `<li>` `<main>` `<ol>` `<p>` `<pre>` `<ul>` `<a>`
+  (`<b>` not bold anymore) (`<br>` carriage returns in a sting of text, not used for spacing, that is margin) `<data>` `<em>` (`<i>` doesn't mean italic anymore) `<mark>` `<small>` fine print `<span>` `<strong>` `<time>` `<u>` `<area>` `<audio>` `<img>` `<map>` `<param>` `<canvas>` `<script>` (`<table>` only for data tables) `<button>` `<label>`
+
+
+  - Standard Layout Items
+  - `<html><body><header></header><main><section></section><article></article><aside></aside></main></body><footer></footer></html>`
+
   - Benefits of Semantic HMTL
     - Readability (for programmers to read)
     - Accessibility (for apps to read to vision impaired)
