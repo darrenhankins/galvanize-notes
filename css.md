@@ -10,9 +10,10 @@
 - Accessibility
 
 ##### 3 ways to connect CSS to HTML
-- inline styles (on the element)
-- Internal Style Sheet (in the head, add style tag)
-- External Style Sheet
+Used properly when in the `<head>` tag for external and internal. Inline is used within the element.
+- Inline styles (on the element)
+- Internal Style Sheet (in the head, add `<style>` tag)
+- External Style Sheet (`<link rel="stylesheet" href="./css/style.css"> `)
 
 - p {color: red}
 - selector {property: value}
@@ -67,3 +68,20 @@
 - https://flukeout.github.io/
 - http://flexboxfroggy.com/
 - https://wireframe.cc/
+
+##### CSS includes various displays
+Examples:
+- div {
+  display: inline-block;
+}
+- div {
+  display: inline;
+}
+- div {
+  display: flex;
+}
+- img {
+  display: block;
+}
+
+- Elements with display:inline-block are like display:inline elements, but they can have a width and a height. That means that you can use an inline-block element as a block while flowing it within text or other elements. The <em> element has a display: inline; by default, because this tag is always used in a sentence.

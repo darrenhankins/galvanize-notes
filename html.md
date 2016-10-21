@@ -25,8 +25,25 @@
   (`<b>` not bold anymore) (`<br>` carriage returns in a sting of text, not used for spacing, that is margin) `<data>` `<em>` (`<i>` doesn't mean italic anymore) `<mark>` `<small>` fine print `<span>` `<strong>` `<time>` `<u>` `<area>` `<audio>` `<img>` `<map>` `<param>` `<canvas>` `<script>` (`<table>` only for data tables) `<button>` `<label>`
 
 
-  - Standard Layout Items
-  - `<html><body><header></header><main><section></section><article></article><aside></aside></main></body><footer></footer></html>`
+  - Standard Layout Items/Structure
+  - `<html>`
+    - `<head>`
+    - `</head>`
+    - `<body>`
+      - `<header>`
+      - `</header>`
+      - `<main>`
+        - `<section>`
+        - `</section>`
+        - `<article>`
+        - `</article>`
+        - `<aside>`
+        - `</aside>`
+      - `</main>`
+      - `<footer>`
+      - `</footer>`
+    - `</body>`
+  - `</html>`
 
   - Benefits of Semantic HMTL
     - Readability (for programmers to read)

@@ -31,6 +31,8 @@ October 18, 2016
 - `$ d` opens list of directories and their structure for current folder
 - `$ which npm` or whatever you want to find
 - `$ atom ~/.gitconfig` git file config
+- `$ cd -` takes you back to the previous directory you were in
+
 
 https://learn.galvanize.com/content/gSchool/productivity-curriculum/master/Misc/Intermediate%20Command%20Line.md
 

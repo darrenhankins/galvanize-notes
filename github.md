@@ -9,7 +9,7 @@
 
 - `$ git add` (moves ship to launch pad)
 - `$ git commit` (moves packages onto ship)
-- `$ git remote add` (set coordinates to mars)
+- `$ git remote add` (set coordinates to mars "staged")
 - `$ git push` (moves the files to repo)
 
 #### Example Project
