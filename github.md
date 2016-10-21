@@ -38,8 +38,8 @@
 - `$ git init`
 - `$ git status`
 - `$ git add -A`
+- `$ git remote add origin git@github.com:darrenhankins/projectName.git` Origin is the naming convention for the initial commit
 - `$ git commit -m "This is the message."`
-- `$ git remote add origin git@github.com:darrenhankins/projectName.git` 'origin is the naming convention for the initial commit'
 - `$ git push origin master`
 
 #### View Git Log File
