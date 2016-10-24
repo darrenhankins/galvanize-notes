@@ -84,3 +84,9 @@ If you already have a file checked in, and you want to ignore it, Git will not i
 
 - `$ touch .gitignore`
 - `$ git rm --cached FILENAME`
+
+
+##### Other Git Commands
+- `$ git status` shows any changes in local repo
+- `$ git diff` shows the changes/differences
+- `$ Q`
