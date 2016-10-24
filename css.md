@@ -19,6 +19,7 @@ Used properly when in the `<head>` tag for external and internal. Inline is used
 - selector {property: value}
 - declaring is everything in the {}
 - everything is called a 'rule'
+- CSS works 'right' to 'left' (ex nav.navigation ul li pu strong { right is implemented first })
 
 ##### Element Selectors
 - `<h1> or <div> or <p>, etc`
@@ -47,8 +48,9 @@ Used properly when in the `<head>` tag for external and internal. Inline is used
 - Border
 - Margin
 
-![alt text][logo]
-[logo]: ./images/box-model-padding.png
+![](./images/box-model-padding.png)
+<!-- ![alt text][logo]
+[logo]: ./images/box-model-padding.png -->
 
 ##### Inline v Block Elements
 - Block is whole row, always start a new line
