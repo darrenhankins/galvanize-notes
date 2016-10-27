@@ -1,5 +1,8 @@
 October 18, 2016
 
+#### Run JavaScript code in Terminal
+- `$ node file.js`
+
 ### Terminal
 - shell, SSH, bash, etc (all the same)
 
@@ -35,8 +38,6 @@ October 18, 2016
 
 
 https://learn.galvanize.com/content/gSchool/productivity-curriculum/master/Misc/Intermediate%20Command%20Line.md
-
-
 
 
 ##### GUI (graphical user interface)

@@ -18,4 +18,9 @@
   - "icebox" the problem
   - using a 'physical' skill set
 
-  
+
+  - JS Jammers podcast
+
+  https://github.com/gSchool/g15/blob/master/technology_news.md
+  https://www.reddit.com/user/w3cj/m/stayrelevant/
+  https://news.ycombinator.com/

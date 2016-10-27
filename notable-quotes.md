@@ -2,11 +2,14 @@
   - not a trick question
 
 
-###  Basic Economics
+####  Basic Economics
 Lightning Talk
   - Opportunity Cost
   - Comparative Advantange
   - Marginal Utility
+
+#### Knowledge Point
+
 
 
 
