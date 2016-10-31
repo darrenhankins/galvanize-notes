@@ -35,6 +35,7 @@ October 18, 2016
 - `$ which npm` or whatever you want to find
 - `$ atom ~/.gitconfig` git file config
 - `$ cd -` takes you back to the previous directory you were in
+- `$ http-server` spins up a local server (localhost:8080)
 
 
 https://learn.galvanize.com/content/gSchool/productivity-curriculum/master/Misc/Intermediate%20Command%20Line.md

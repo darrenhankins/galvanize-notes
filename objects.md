@@ -19,7 +19,7 @@ console.log(cat);
 ```
 #### Nested Objects
 
-```javascript
+```js
 var blog = {
   posts: [{
     title: 'Hello World',
