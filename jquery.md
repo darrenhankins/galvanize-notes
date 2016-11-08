@@ -42,3 +42,6 @@ Class: `$('class')`
 
   - `$div.html(<p>Test</p>)`
   - `$div.html()` html() with no parameter will retrieve the contents of the tag
+
+#### JQuery Commands
+`$.n.jquery` retrieves a number if jQuery is run on the page

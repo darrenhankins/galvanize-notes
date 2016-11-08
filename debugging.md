@@ -14,3 +14,9 @@
 JavaScript is an interpretive language
 
 Java is a compile language
+
+### Chrome Dev Tools
+
+- Sources:
+  - `command+option+j`
+  - click on line to select 'breakpoint'

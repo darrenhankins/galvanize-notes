@@ -25,3 +25,16 @@ http://slides.gteach.xyz/Frontend/DOM-Coding/intro-to-dom.md#/
         - `var h1 = document.getElementsByTagName('h1')[0]`
         - `secondh1`
         - outputs `<h1>title</h1>`
+
+
+
+#### Chrome Console Query `Option+Command+J`
+- `document.body.children[0].children`
+
+- `$('button')[0]` jQuery
+- `document.getElementsByName('searchButton')`javaScript
+
+
+- `var button = document.getElementsByTagName('button')`
+- `button.length`
+- `button[1].names`

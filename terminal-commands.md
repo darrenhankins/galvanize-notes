@@ -35,7 +35,13 @@ October 18, 2016
 - `$ which npm` or whatever you want to find
 - `$ atom ~/.gitconfig` git file config
 - `$ cd -` takes you back to the previous directory you were in
-- `$ http-server` spins up a local server (localhost:8080)
+
+##### Spin up local server in any folder as the root
+- `$ npm install -g http-server` installs
+- `$ http-server -p 8080` spins up a local server on port 8080, the default port (localhost:8080)
+- `$ Control+C` stop server
+
+- `$ host google.com` gives back the IP address
 
 
 https://learn.galvanize.com/content/gSchool/productivity-curriculum/master/Misc/Intermediate%20Command%20Line.md
