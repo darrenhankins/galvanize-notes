@@ -90,3 +90,33 @@ If you already have a file checked in, and you want to ignore it, Git will not i
 - `$ git status` shows any changes in local repo
 - `$ git diff` shows the changes/differences
 - `$ Q`
+
+
+#### GIT
+- stash
+- branch
+- checkout
+- merge
+- reset
+- rebase
+- log
+
+#### GIT Branches (* symbolizes the HEAD)
+- `$ git log` "Q" will get out of log
+- `$ git branch` show the current branch
+- `$ git checkout master` switch to master branch or whatever branch you specify
+- `$ git pull` fetches and merges
+- `$ git fetch` just fetches
+##### GIT Checkout
+- `$ git checkout -b about-page` creates a new branch called 'about-page'
+- `$ git push origin about-page` pushes to the branch 'about-page'
+- `$ git checkout master` changes head to master
+- `$ git merge about-page` merges with master
+- `$ git stash apply` applies the stash
+- `$ git stash list` lists the stash
+- `$ git stash clear` removes the stash
+
+- `$ git reset HEAD~1` resets the head back to 1 commits
+- `$ git reset HEAD~` back to previous commit
+
+- `$ git rebase -i HEAD`

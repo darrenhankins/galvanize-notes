@@ -14,7 +14,7 @@ body {
   color: #333;
   margin: 0;
   /* 100% of the view height "vh" */
-  heigth: 100vh:
+  height: 100vh:
   display: flex:
   flex-direction: column;
   justify-content: space-between;
@@ -100,3 +100,20 @@ footer {
 ### Responsive Design vs Adaptive Design
   - responsive to the size of the window
   - adaptive changes to rows only as the screen changes using media queries
+
+### Stardard break points````
+
+```css
+  /* Extra small devices (phones, less than 768px) */
+/* No media queries if designing mobile first */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+```

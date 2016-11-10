@@ -1,7 +1,13 @@
 ### Lightning Talks
 Short 8 min presentations
 
-- Start with a hook
+- #### Start with a hook and/or objective
+- #### Provide information
+- #### Re-iterate/Re-cap the object
+
+<hr />
+
+### Points
 - Tie slide deck into the presentation
 - Keep presentation simple and clean
 - Speak confidently (don't question your own position on the subject)
@@ -9,11 +15,11 @@ Short 8 min presentations
 - Showing you know what your are talking about
 
 - google slides, prezi.com, emaze.com
+
 <hr />
 
+### Improve
 
-Improve
----
 - Time
 - A lot of text
 - Excited

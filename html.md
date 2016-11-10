@@ -54,3 +54,11 @@
 
 
 ##### 'Scraping' - take data from a web site using HTML tag to pull information off
+
+### HTML Forms
+
+Forms
+
+- action
+- method
+- post
