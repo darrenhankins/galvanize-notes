@@ -122,3 +122,6 @@ If you already have a file checked in, and you want to ignore it, Git will not i
 - `$ git reset HEAD~` back to previous commit
 
 - `$ git rebase -i HEAD`
+
+- `$ git branch -d branchName` deletes local branch
+- `$ git branch -dr origin/branchName` delete remote branch
