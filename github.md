@@ -107,6 +107,7 @@ If you already have a file checked in, and you want to ignore it, Git will not i
 - `$ git checkout master` switch to master branch or whatever branch you specify
 - `$ git pull` fetches and merges
 - `$ git fetch` just fetches
+- `$ git fetch diff` show differences
 ##### GIT Checkout
 - `$ git checkout -b about-page` creates a new branch called 'about-page'
 - `$ git push origin about-page` pushes to the branch 'about-page'
