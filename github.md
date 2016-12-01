@@ -125,3 +125,5 @@ If you already have a file checked in, and you want to ignore it, Git will not i
 
 - `$ git branch -d branchName` deletes local branch
 - `$ git branch -dr origin/branchName` delete remote branch
+
+- `$ git log --graph --decorate` shows all branches and what branches they are in sync with

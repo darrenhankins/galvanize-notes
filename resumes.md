@@ -50,4 +50,35 @@
 ### Anything Else
 - Won hackathon
 - presented at meetup
-- 
+-
+
+<hr />
+
+- Tech notes: lead with unfamiliar
+- Links to deployed and response
+
+#### Skills
+- sub-headers (languages, tools, techniques)
+- Make sure the skill are written correctly
+- Skill Section v Tech Notes
+  - API integration in tech notes versus skill section
+  - no need to put soft skills, "hard worker", etc
+  - pivotal tracker, firebase, trello
+
+#### Experience
+  - 2-3 jobs tops
+  - 1-3 bullet points
+  - focus on achievements and avoid industry specific terminology and acronyms
+
+#### Education
+  - Talk about your experience at Galvanize
+  - gave lightning talks
+  - 1000+ hrs of coursework
+  - Group Projects
+  - Mentored others
+  - Activities: meetups, denver startup week, etc
+
+#### Cover Letters
+  - short and sweet, always
+  - Salutation (ex. Hey Team Zayo!, better than "To whom it may concer:")
+  - First paragraph: role of interest; connection, focus on the company

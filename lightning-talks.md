@@ -1,4 +1,3 @@
-### Lightning Talks
 Short 8 min presentations
 
 - #### Start with a hook and/or objective
