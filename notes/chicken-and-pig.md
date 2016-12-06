@@ -2,7 +2,7 @@ The business fable of The Chicken and the Pig is about commitment to a project o
 
 #### The fable of the Chicken and the Pig is used to illustrate the differing levels of project stakeholders involved in a project.
 
-![](./images/scrumtoon.jpg)
+![](../images/scrumtoon.jpg)
 <!-- ![alt text][logo]
 [logo]: ./images/scrumtoon.jpg -->
 
