@@ -1,6 +1,6 @@
 ### Entity Relationship Diagram
 
-<img src='./images/data_model.gif' width="600">
+<img src='../images/data_model.gif' width="600">
 http://www.vertabelo.com/blog/technical-articles/crow-s-foot-notation
 
 ERD Symbols
