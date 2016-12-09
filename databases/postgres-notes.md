@@ -46,6 +46,8 @@ If it worked, you'll see something like this:
 psql (9.5.3)
 Type "help" for help.
 
+\h will return SQL command and \? will give you PSQL
+
 dannyfritz=#
 ```
 
