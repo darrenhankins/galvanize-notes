@@ -1,37 +1,37 @@
-### CRUD App
+### CRUD App using KNEX
 
 Console Commands
 ```
 // Installing and setting up knex
 
-$ npm init -y
-$ npm install --save pg knex    #install knex locally
+$ npm init -y                   #creates a package.json file in the project folder
 $ npm install knex -g           #install knex cli globally
+$ npm install --save pg knex    #install knex locally
 $ knex init                     #create knexfile.js
-$ createdb db_name
+$ createdb db_name              #creates database
 
-npm install -S dotenv
-npm install -S express
-npm install -S body-parser
-npm install -g gitignore
-
-
-touch .env
-echo .env >> .gitignore // adds to gitignore
+$ npm install -S dotenv
+$ npm install -S express
+$ npm install -S body-parser
+$ npm install -g gitignore
 
 
-knex migrate:make fileName  #creates a migration file
-knex migrate:latest  #runs the migration file
+$ touch .env
+$ echo .env >> .gitignore     # adds to gitignore
 
-knex seed:make  #creates seed file
-knex seed:run  #runs the new seed file that was created
+
+$ knex migrate:make someName  #creates a migration file 1-name
+$ knex migrate:latest         #runs the migration file
+
+$ knex seed:make someName     #creates seed file, runs in order so name file 1-name
+$ knex seed:run               #runs the new seed file that was created
 
 
 psql
-\l  #list databases
-\dt  #list the tables
-\d ballons  #describe ballons table
-\c clown_inventory  #changes to db
+\l                      #list databases
+\dt                     #list the tables
+\d ballons              #describe ballons table
+\c clown_inventory      #changes to db
 SELECT * FROM ballons;  #show the ballons
 
 
