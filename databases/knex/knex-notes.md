@@ -111,7 +111,7 @@ exports.seed = function(knex, Promise) {
           type: "water"
         })
       ])
-      
+
     });
   );
 };
@@ -126,21 +126,29 @@ $ knex seed:run // run the migration
 
 ```js
 router.get("/pokemon", function(req,res){
-    knex('pokemon').select().where('pokedex_number', '>', 100).then(function(pokemon) {
+    knex('pokemon')
+    .select()
+    .where('pokedex_number', '>', 100)
+    .then(function(pokemon) {
       res.json(pokemon);
     });
 });
 
 router.get("/sprites", function(req, res) {
-    knex('spirites').select().then(function(sprites){
+    knex('spirites')
+    .select()
+    .then(function(sprites){
        res.render('pokepictures', {sprites: sprites})
     });
 });
 
 router.post("/sprites", function(req,res) {
-    knex("sprites").insert({url: req.body.url, pokemon_id: req.body.pokemon.id, type: req.body.type}).then(function() {
+    knex("sprites")
+    .insert({url: req.body.url, pokemon_id: req.body.pokemon.id, type: req.body.type})
+    .then(function() {
         res.send("Success")
-    }).catch(function(e) {
+    })
+    .catch(function(e) {
         res.json(e)
     });
 });

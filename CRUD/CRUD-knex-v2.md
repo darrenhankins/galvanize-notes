@@ -1,9 +1,6 @@
-### CRUD App using KNEX
-
-Console Commands
-```
-// Installing and setting up knex
-
+### CRUD: Knex
+---
+### DELETE THESE are in CRUD-Deploying
 $ npm init -y                   #creates a package.json file in the project folder
 $ npm install knex -g           #install knex cli globally
 $ npm install --save pg knex    #install knex locally
@@ -14,17 +11,54 @@ $ npm install -S dotenv
 $ npm install -S express
 $ npm install -S body-parser
 $ npm install -g gitignore
+$ npm i -S cors  // app.use(cors()); in app.js
+
+$ npm install // installs dependencies based on json.package file
+$ npm update // only install things in json.package that have not been install
 
 
 $ touch .env
 $ echo .env >> .gitignore     # adds to gitignore
+### DELETE THESE are in CRUD-Deploying
+---
 
+### Knexfile.js Setup
 
-$ knex migrate:make someName  #creates a migration file 1-name
+```js
+// Update with your config settings.
+require("dotenv").config();
+
+module.exports = {
+
+  development: {
+    client: 'postgresql',
+    connection: 'postgres://localhost/galvanize_brews'
+  },
+
+  production: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL + '?ssl=true'
+  }
+
+};
+
+```
+
+### Add to .env
+`DATABASE_URL=heroku.database.url.will.go.here`
+
+---
+
+### Make a DB Migration file
+
+```
+$ knex migrate:make 1-someName  #creates a migration file 1-name
 $ knex migrate:latest         #runs the migration file
 
-$ knex seed:make someName     #creates seed file, runs in order so name file 1-name
+$ knex seed:make 1-someName     #creates seed file, runs in order so name file 1-name
 $ knex seed:run               #runs the new seed file that was created
+$ knex seed:run --debug       #or in the knex string, knex('').debug(true)
+
 
 
 psql
@@ -33,15 +67,58 @@ psql
 \d ballons              #describe ballons table
 \c clown_inventory      #changes to db
 SELECT * FROM ballons;  #show the ballons
+TABLE ballons;          #show the ballons
 
 
-touch index.js  #create express app
-node index.js
+--- //don't need// touch index.js  #create express app
+--- //don't need// node index.js
 
-nodemon index.js  #in first terminal window
-http-server  #in second terminal window, within project directory
+$ nodemon bin/www  #in first terminal window (if package.json start is steup correclty) or $ nodemon index.js
+
+$ http-server  #in second terminal window, within project directory
 
 
+
+```
+---
+Create a new migration file
+
+`$ knex migrate:make sticker`
+```js
+return knex.schema.createTable('sticker', table => {
+  table.increments();
+  table.text('description').notNullable();
+  table.text('image_url').notNullable();
+  table.integer('quantity').notNullable().defaultTo(0);
+  table.text('size');
+  table.integer('user_id').references('user.id').unsigned().onDelete('cascade');
+
+});
+};
+
+exports.down = function(knex, Promise) {
+return knex.schema.dropTableIfExists('sticker');
+};
+
+```
+---
+#### Create new migration table to change column name
+```js
+
+
+exports.up = function(knex, Promise) {
+  return knex.schema.table('sticker', table =>{
+    // to change column names
+    table.dropColumn('date');
+    table.datetime('created_at');
+  });
+};
+
+exports.down = function(knex, Promise) {
+  // to revert to original columns
+  table.dropColumn('created_at');
+  table.datetime('date');
+};
 
 ```
 ---
@@ -151,14 +228,3 @@ exports.seed = fucntion (knex, Promise){
 DATABSE_URL=postgres://localhost/clown_inventory
 ```
 ---
-
-require('dotenv').config();
-
-development
-client: 'pg'
-connection: 'process.env.DATABSE_URL'
-<!-- connection: 'postgres://localhost/clown_inventory' -->
-
-production
-client: 'pg'
-connection: 'process.env.DATABSE_URL'

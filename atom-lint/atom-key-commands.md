@@ -6,3 +6,4 @@
 - `Shift + Control + L` In atom, allows user to select the document type for code hinting
 - `Control + Option + B` Atom Beautify
 - `Command + Option + U` View Source
+- `Command + Shift + D` duplicates a current line

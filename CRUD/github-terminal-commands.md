@@ -10,6 +10,7 @@
 - `$ git add` (moves ship to launch pad)
 - `$ git commit` (moves packages onto ship)
 - `$ git remote add` (set coordinates to mars "staged")
+- `$ git remote -v` # shows all the remotes and their names
 - `$ git push` (moves the files to repo)
 
 #### Example Project
@@ -39,6 +40,8 @@
 - `$ git status`
 - `$ git add -A`
 - `$ git remote add origin git@github.com:darrenhankins/projectName.git` Origin is the naming convention for the initial commit
+- `$ git remote rm given-name` remove remote
+- `$ git remote -v` shows all the remotes
 - `$ git commit -m "This is the message."`
 - `$ git push origin master`
 
@@ -105,6 +108,8 @@ If you already have a file checked in, and you want to ignore it, Git will not i
 - `$ git log` "Q" will get out of log
 - `$ git branch` show the current branch
 - `$ git checkout master` switch to master branch or whatever branch you specify
+- `$ git checkout -b branch-to-create` create a branch
+- `$ git checkout -d branch-to-delete` deletes a branch
 - `$ git pull` fetches and merges
 - `$ git fetch` just fetches
 - `$ git fetch diff` show differences
@@ -127,3 +132,10 @@ If you already have a file checked in, and you want to ignore it, Git will not i
 - `$ git branch -dr origin/branchName` delete remote branch
 
 - `$ git log --graph --decorate` shows all branches and what branches they are in sync with
+
+#### GIT Heroku
+push to matt's heroku account as a collaborator
+```
+$ git remote add matt-heroku https://git.heroku.com/mhw-sticker-mania.git
+
+```

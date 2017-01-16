@@ -30,6 +30,11 @@ October 18, 2016
 - `$ cat` (shows content of something)
 - `$ atom .` (opens the current directory with Atom app)
 - `$ git clone git@github.com:darrenhankins/cmdLineSentence.git`
+---
+##### Pull from school to update repo on local
+- `$ git remote add gschool git@github.com:gSchool/DailyProgrammer.git`
+- `$ git pull gschool master`
+---
 - $ ('up arrow' at prompt goes through latest commands)
 - `$ d` opens list of directories and their structure for current folder
 - `$ which npm` or whatever you want to find

@@ -1,0 +1,46 @@
+### CRUD-server-deploy
+
+
+#####  Heroku Commands
+
+```
+$ heroku login
+
+$ heroku create [name] // Initializes $ heroku app and adds remote
+https://crud-knex.herokuapp.com/ | https://git.heroku.com/crud-knex.git
+
+$ git add -A
+$ git commit -m "database url add"
+$ git push heroku master  #push github repo master to heroku
+
+$ heroku addons:create heroku-postgresql --app heroku-app-name #create a database for the app
+
+$ heroku config --app heroku-app-name #should show the database for the app
+
+.env file
+DATABASE_URL: postgres://oofgdgfafantdp:s6K5huZUac5WtFuoFGs0LSi_SQ@ec2-50-17-236-15.compute-1.amazonaws.com:5432/dejo4r8s3a0u14  #put in .env file
+
+$ git add -A
+$ git commit -m "database url add"
+$ git push heroku master
+
+$ knex migrate:latest --env production
+$ knex seed:run --env production
+
+
+$ heroku pg:psql  #Connect to heroku addon database server
+
+psql# \c [database]  #change the database
+psql# \d
+psql# \d beers  #show the beers in the table
+psql# SELECT * FROM TableName;
+
+$ heroku logs [--tail]  #Shows heroku server terminal
+$ heroku config  #shows heroku environment variables
+$ herokku config:set clown=fiesta
+$ heroku open
+$ heroku apps  #shows all the apps
+$ heroku destroy [app name]  #destory the app
+
+
+```
