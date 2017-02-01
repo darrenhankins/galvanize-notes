@@ -41,12 +41,14 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('url');
     table.integer('pokemon_id').references('pokemon.id').notNullable();
-    table.string('type');
+    table.text('type');
   });
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTable('sprites');
+  // return knex.schema.dropTable('sprites');
+  return knex.schema.dropTableIfExists('sprites');
+
 };
 
 ```
@@ -89,29 +91,30 @@ exports.seed = function(knex, Promise) {
   // return Promise.join(
     // Deletes ALL existing entries
     // knex('moves').del(),
-
-  return knex('moves'.del().then(function() {
-
-      return Promise.all([
-        // Inserts seed entries
-        knex('moves').insert({
-          name: 'cut',
-          type: "normal"
-        }),
-        knex('moves').insert({
-          name: 'fly',
-          type: "flying"
-        }),
-        knex('moves').insert({
-          name: 'sand attack',
-          type: "normal"
-        }),
-        knex('moves').insert({
-          name: 'splash',
-          type: "water"
-        })
-      ])
-
+    // return knex('moves'.del().then(function() {
+    // return Promise.all([
+    //   // Inserts seed entries
+    //   knex('moves').insert({
+    //     name: 'cut',
+    //     type: "normal"
+    //   }),
+    //   knex('moves').insert({
+    //     name: 'splash',
+    //     type: "water"
+    //   })
+    // ])
+    return knex.raw('DELETE FROM "user"; ALTER SEQUENCE user_id_seq RESTART WITH 1')
+      .then(function () {
+      const users = [{
+        id: 1,
+        email: 'joe@crabshack.com',
+        password: 'password01'
+      },{
+        id: 2,
+        email: 'ralph@crabshack.com',
+        password: 'password012345'
+      }]
+      return knex('user').insert('users');
     });
   );
 };

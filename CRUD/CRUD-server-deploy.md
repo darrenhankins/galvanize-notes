@@ -34,6 +34,7 @@ psql# \c [database]  #change the database
 psql# \d
 psql# \d beers  #show the beers in the table
 psql# SELECT * FROM TableName;
+$ dropdb warmup-db;
 
 $ heroku logs [--tail]  #Shows heroku server terminal
 $ heroku config  #shows heroku environment variables
