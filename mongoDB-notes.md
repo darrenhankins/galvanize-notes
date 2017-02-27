@@ -17,6 +17,15 @@ $ mongo  // connects to db
 
 ```
 
+```terminal
+$ npm init -y
+$ npm install express -S
+$ npm install body-parser -S
+$ npm install monk -S
+$ yarn
+
+```
+
 
 ```js
 
@@ -24,6 +33,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const monk = require('monk');
 const db = monk('localhost/my-test-database');
+const cats = db.get('cats');
 
 const app = express()
 // parse application/x-www-form-urlencoded
