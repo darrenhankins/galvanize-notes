@@ -1,4 +1,6 @@
 ### Algorithms and Big O
+https://github.com/gSchool/computer-science-curriculum/blob/master/Unit-1/02-big-o-notation.md
+
 Algorithms - set of steps to solve a certain problem
 
 ---
@@ -10,7 +12,7 @@ Algorithms - set of steps to solve a certain problem
 ---
 
 ##### Big O
-Big O - Allows programmers to discuss the complexity of an algorithm and understand how fast the runtime will grow given its input, in the worst case
+Big O - Allows programmers to discuss the complexity of an algorithm and understand how fast the runtime will grow given its input, in the worst case (elevator pitch)
 
 
 Big O notation is to classify algorithms by how they respond to changes in input size, such as how the processing time of an algorithm changes as problem size becomes extremely large
@@ -20,6 +22,7 @@ Big O notation is to classify algorithms by how they respond to changes in input
 
 
 <img src="./images/big-o-complexity.png" width="600">
+<img src="./images/big-o-complexity2.jpg" width="600">
 
 Types
 - Constant time

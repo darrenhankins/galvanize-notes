@@ -169,7 +169,7 @@ knex init // creates a knexfile.js
 
 development and production module.exports
 
-npm install -save dotenv // program to save file that won't get committed
+npm install --save dotenv // program to save file that won't get committed
 
 touch .env
 nano .env

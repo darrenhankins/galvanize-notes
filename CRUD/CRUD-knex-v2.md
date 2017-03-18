@@ -54,6 +54,7 @@ module.exports = {
 ```
 $ knex migrate:make 1-someName  #creates a migration file 1-name
 $ knex migrate:latest         #runs the migration file
+$ knex migrate:rollback   #rollback to previous migration
 
 $ knex seed:make 1-someName     #creates seed file, runs in order so name file 1-name
 $ knex seed:run               #runs the new seed file that was created
@@ -181,15 +182,15 @@ migration file in migrations folder
 exports.up = function(knex, Promise){
   return knex.schema.createTable('ballon', table => {
     table.increments();
-    table.text('shape');
+    table.text('shape').notNullable();
     table.float('volume');
     table.text('color');
-    table.text('size');
+    table.text('size_id').references('size.id').unsigned().onDelete('cascade');
   });
 };
 
 exports.down = function(knex, Promise){
-  return knex.schema.dropTable('ballon');
+  return knex.schema.dropTableIfExists('ballon');
 };
 
 ```

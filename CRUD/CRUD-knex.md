@@ -54,6 +54,7 @@ module.exports = {
 ```
 $ knex migrate:make 1-someName  #creates a migration file 1-name
 $ knex migrate:latest         #runs the migration file
+$ knex migrate:rollback   #rollback to previous migration
 
 $ knex seed:make 1-someName     #creates seed file, runs in order so name file 1-name
 $ knex seed:run               #runs the new seed file that was created
@@ -163,10 +164,10 @@ app.get('/balloon/:id', (req,res)=> {
 
 ```
 ---
-in db folder just made, create new file knew.js
+in db folder just made, create new file knex.js
 ```js
 const environment = process.env.NODE_ENV || 'development';
-const knexConfig = require('...knexfile');
+const knexConfig = require('../knexfile');
 const config = knexConfig[environment];
 const knex = require('knex');
 const knexConnection = knex(config);

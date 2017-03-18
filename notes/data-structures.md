@@ -53,10 +53,9 @@ JavaScript and Java both use automatic memory management called "Garbage Collect
 - Stacks
 - Queues
 - Graphs
--
 
 
-1.) Logical view
-2.) operations
-3.) Cost of Operations
-4.) 
+  1.) Logical view
+  2.) operations
+  3.) Cost of Operations
+  4.)

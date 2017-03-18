@@ -1,3 +1,8 @@
+##### Systems Thinking
+  - How do we organize code?
+  - how do we group our application into parts?
+  - 
+
 #### 4 Pillars of OOP
 
 - Encapsulation

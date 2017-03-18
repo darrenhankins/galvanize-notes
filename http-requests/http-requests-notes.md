@@ -14,8 +14,8 @@
     - header
 
 
-<img src="./images/sequence_01.png" width="500">
-<img src="./images/diagram_01.png" width="500">
+<img src="../images/sequence_01.png" width="500">
+<img src="../images/diagram_01.png" width="500">
 ![](./images/sequence_01.png)
 
 ```js
