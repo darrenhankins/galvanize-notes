@@ -3,7 +3,7 @@
 
 - ##### Create GitHub project
   - `$ echo "## brew-tasting-tracker" >> README.md` Creates a README.md file
-  - `$ git init` Creates a empty .gitignore file
+  - `$ git init`
   - `$ touch .gitignore`
   - Add to .gitignore (google drive thing)
       - `*/Icon?` `*/Icon` `Icon?`

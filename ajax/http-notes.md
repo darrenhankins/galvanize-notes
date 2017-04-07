@@ -1,4 +1,5 @@
 ### HTTP
+https://www.youtube.com/watch?v=BjMuum8KeJo
 
 HTTP functions as a request-response protocol in the client-server computing model
 
@@ -11,13 +12,13 @@ http://www.domain.com:80/this/is/the/path.html?foo=bar&#id
 5. query string (?foo=bar&)
 6. fragment (#id)
 
-#### 3 parts of an HTTP request-request
+#### Parts of an HTTP request-request
 
-1. METHOD (GET)
-2. Location or path (ip_address)
-3. HTTP version (http/1.1)
+1. METHOD (GET) + Location or path (ip_address) + HTTP version (http/1.1)
+4. Header
+5. body (optional)
 
 #### Return Response
-1. Version (http/1.1)
-2. Status Code (200 OK)
-3. Body (of Response to render the page)
+1. Version (http/1.1) + Status Code (200 OK)
+3. Header
+4. Body (of Response to render the page)
